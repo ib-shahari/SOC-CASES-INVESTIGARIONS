@@ -20,7 +20,7 @@
  * **Observed Data:** Suricata generated alerts identifying TCP SYN flood patterns directed at 10.100.100.23:80.
  * **Analyst Perspective:** Automated IDS signatures can produce false positives during legitimate traffic spikes or load testing. This alert was logged as an initial hypothesis requiring further correlation across firewall and packet data.
  ![[suricata-alert.png]]
-(CASES/Case-001-TCP-SYN-DoS/png/suricata-alert.png)
+![Suricata Alert](png/suricata-alert.png)
 ### Phase 2: Traffic Flow & Volume Scoping (OPNsense Firewall)
  * **Observed Data:** NetFlow/traffic statistics on OPNsense showed that ~99% of total interface bandwidth was consumed by traffic directed to the single web service from origin 10.100.100.25.
  * **Analyst Perspective:** The concentration of traffic rules out a general network-wide anomaly or broad subnet scan, confirming a targeted resource exhaustion attempt against a specific host.
