@@ -1,5 +1,5 @@
 # SOC-CASES-INVESTIGARIONS
-# SOC Investigation Writeups and Case Studies
+# SOC Investigation Case Studies
 
 Welcome to the Security Operations Center (SOC) Analysis and Threat Hunting Repository. This repository serves as a documented collection of hands-on incident response cases, log analysis, alert triaging, and artifact investigations.
 
