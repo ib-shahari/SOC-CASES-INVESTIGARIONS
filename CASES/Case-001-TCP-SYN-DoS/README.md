@@ -28,16 +28,16 @@
  * **Analyst Perspective:** The concentration of traffic rules out a general network-wide anomaly or broad subnet scan, confirming a targeted resource exhaustion attempt against a specific host.
 
 
-![[Flow Statistics](png/flow-statistics.png)
+![Flow Statistics](png/flow-statistics.png)
 
 ### Phase 3: Packet-Level Verification (Wireshark Deep Inspection)
  * **Observed Data:** Deep packet analysis of the 77-second capture interval (1,370,284 total packets) revealed a peak volume of 7.5 × 10^6 SYN packets per second.
  * **Analyst Perspective:** The critical metric was connection state asymmetry: 886,917 outbound SYN packets were transmitted by the source host with negligible completed handshakes (ACKs) returned. This structural imbalance confirms an active half-open connection flood rather than high-volume legitimate web browsing.
  
-![[Flow](png/Wireshark-FlowGraph.png)
+![Flow](png/Wireshark-FlowGraph.png)
 
 
-![[Wireshark Conversations](png/Wireshark-conversations.png)
+![Wireshark Conversations](png/Wireshark-conversations.png)
 
 
 ## 4. Evidence Matrix
