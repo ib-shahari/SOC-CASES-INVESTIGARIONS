@@ -4,8 +4,6 @@ Welcome to the Security Operations Center (SOC) Analysis and Threat Hunting Repo
 
 The objective of this project is to detail investigative methodologies, root-cause findings, and threat mitigation strategies using open-source SOC tools and standard industry frameworks.
 
----
-
 ## Repository Structure
 
 ```text
