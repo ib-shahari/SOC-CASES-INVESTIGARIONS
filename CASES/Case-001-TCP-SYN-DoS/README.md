@@ -24,7 +24,7 @@
  * **Observed Data:** NetFlow/traffic statistics on OPNsense showed that ~99% of total interface bandwidth was consumed by traffic directed to the single web service from origin 10.100.100.25.
  * **Analyst Perspective:** The concentration of traffic rules out a general network-wide anomaly or broad subnet scan, confirming a targeted resource exhaustion attempt against a specific host.
 
-![[flow-statistics 2.png]]
+(png/flow-statistics 2.png)[suricata alert]! 
 
 ### Phase 3: Packet-Level Verification (Wireshark Deep Inspection)
  * **Observed Data:** Deep packet analysis of the 77-second capture interval (1,370,284 total packets) revealed a peak volume of 7.5 × 10^6 SYN packets per second.
